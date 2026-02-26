@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>autonomous_rc</name>
+  <version>1.0.0</version>
+  <description>
+    TensorRT 8.x autonomous RC control node
+    Lane Segmentation + Object Detection + IPM Distance + DC Motor + Continuous Servo
+    + Raw Image Publishing via /camera/raw_image
+  </description>
+  <maintainer email="dev@project.local">autonomous_rc_team</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- ROS 2 core -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+
+  <!-- 영상 송출: sensor_msgs만 필요 (cv_bridge 불필요) -->
+  <depend>sensor_msgs</depend>
+
+  <!-- OpenCV (시스템 패키지) -->
+  <build_depend>libopencv-dev</build_depend>
+  <exec_depend>libopencv-dev</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
