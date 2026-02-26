@@ -1,0 +1,12 @@
+invisible_signal_None
+vehicular_signal_red
+vehicular_signal_yellow
+vehicular_signal_green
+vehicular_signal_red_and_green_arrow
+vehicular_signal_green_and_green_arrow
+pedestrian_signal_green
+pedestrian_signal_red
+pedestrian
+car
+stopline
+crosswalk
